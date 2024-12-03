@@ -1,0 +1,44 @@
+body{
+  background-color: #eee;
+  margin: 0;
+}
+
+.container{
+  margin: 40px auto;
+  width: 600px;
+  height: 400px;
+  text-transform: capitalize;
+  display: grid;
+  grid-template-columns:repeat(2 , 1fr) ;
+  grid-template-rows: 70px 1fr;
+  grid-template-areas:"log log" "for con";
+background-color: #fff;
+  
+}
+
+h1{
+  grid-area: log;
+  background-color: #007aff;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+form{
+  grid-area: for;
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+
+.connect{
+  grid-area: con;
+  display: flex;
+}
